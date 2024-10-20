@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud-Based Attendance Systement</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <!-- left side me logo and name -->
+      <div class="logo-name">
+        <img src="logo.png" alt="Logo" />
+        <span>Attendance System</span>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar" id="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <!-- Right side menu  -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#" onclick="showLogin()" id="loginBtn">Login</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- dropdown menu -->
+
+        <li class="dropdown">
+          <button class="dropdown-btn">&#9776;</button>
+          <div class="dropdown-content">
+            <a href="#" id="search-trigger">Search</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#leave">Leave Management</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Modal (Login Form) -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div class="login-container">
+          <div class="login-box">
+            <div class="logo">
+              <img src="logo.png" alt=" Logo" />
+              <h2>Login Form</h2>
+            </div>
+            <form id="loginForm">
+              <div class="user-type">
+                <label
+                  ><input
+                    type="radio"
+                    name="userType"
+                    value="Teacher"
+                    required
+                  />
+                  Teacher</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="userType"
+                    value="School"
+                    required
+                  />
+                  School</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="userType"
+                    value="Officials"
+                    required
+                  />
+                  Officials</label
+                >
+                <label
+                  ><input type="radio" name="userType" value="Other" required />
+                  Other</label
+                >
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="userId"
+                  placeholder="Enter User ID"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter User Password"
+                  required
+                />
+                <span id="togglePassword" class="toggle-password">👁️</span>
+              </div>
+
+              <div class="captcha">
+                <p>AbCe445</p>
+                <input
+                  type="text"
+                  id="captcha"
+                  placeholder="Enter User Captcha"
+                  required
+                />
+                <button type="button" class="refresh-captcha">🔄</button>
+              </div>
+
+              <div class="sign-in-container">
+                <button type="submit">SIGN IN</button>
+                <div class="forgot-password">
+                  <a href="#">Forgot Your Password?</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <h2>Login</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Main section -->
+    <section>
+      <div class="content">
+        <div class="Main-content">
+          <span class="span-1">
+            <h1>Automate Your Attendance with Ease</h1>
+            <p>
+              Our cloud-based attendance system ensures real-time, accurate
+              attendance tracking, built for educational institutions and
+              organizations.
+            </p>
+          </span>
+
+          <span class="span-2">
+            <h1 style="color: #001f3f">Cloud based</h1>
+            <h1 style="color: #001f3f">Attendance System</h1>
+          </span>
+        </div>
+        <br />
+        <div>
+          <a href="#features">Explore Features</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="features" id="features">
+      <h2>Key Features</h2>
+      <div class="feature-box">
+        <img src="assets/cloud-storage-outline.svg" alt="Cloud Storage Icon" />
+        <h3>Cloud Storage</h3>
+        <p>
+          All attendance records are securely stored in the cloud for easy
+          access anytime.
+        </p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/analytics.svg" alt="Analytics Icon" />
+        <h3>Real-Time Tracking</h3>
+        <p>Track attendance in real-time using mobile or desktop devices.</p>
+      </div>
+      <div class="feature-box">
+        <img src="assets/dashboard.svg" alt="Dashboard Icon" />
+        <h3>Analytics Dashboard</h3>
+        <p>
+          Get in-depth insights into attendance trends with our analytics tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <p>&copy; 2024 Cloud-Based Attendance System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
