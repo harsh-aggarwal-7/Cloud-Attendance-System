@@ -25,7 +25,7 @@
 
       /* Navbar styling */
       nav {
-        background-color: #001f3f;
+        background-color: #002855;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -152,10 +152,11 @@
         margin-bottom: 40px;
       }
       .card {
-    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Gradient background */
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow */
-    border-radius: 10px; /* Rounded corners */
+    .card {
+    background: #ffffff; /* Clean white background */
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -287,26 +288,29 @@
     </nav>
 
     <div class="container">
-      <section id="dashboard" class="dashboard">
+    <section id="dashboard" class="dashboard" style="padding-top: 40px;">
         <div class="card">
-          <h3>Present: 85</h3>
+            <h3>Present: 85</h3>
         </div>
         <div class="card">
-          <h3>Absent: 15</h3>
+            <h3>Absent: 15</h3>
         </div>
         <div class="card">
-          <h3>Average Attendance: 90%</h3>
+            <h3>Average Attendance: 90%</h3>
         </div>
-      </section>
+    </section>
 
-      <section id="feedback">
+    <!-- Feedback section -->
+    <section id="feedback" style="margin-top: 50px;">
         <div class="feedback-form">
-          <h2>Feedback</h2>
-          <input type="text" placeholder="Your Name" />
-          <textarea placeholder="Your Feedback"></textarea>
-          <button>Submit</button>
+            <h2>Provide Feedback</h2>
+            <input type="text" placeholder="Your Name" />
+            <textarea placeholder="Your Feedback"></textarea>
+            <button>Submit</button>
         </div>
-      </section>
+    </section>
+</div>
+
       <br /><br />
 
       <section id="leave">
